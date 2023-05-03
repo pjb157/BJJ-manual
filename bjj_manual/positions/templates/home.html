@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    h1 { color: blue; }
+</style>
+    <h1>Welcome</h1>
+    <p>List of positions</p>
+    <ul>
+        {% for position in all_positions %}
+        <li>{{ position }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

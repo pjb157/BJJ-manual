@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    h1 { color: blue; }
+</style>
+    <h1>{{position}}</h1>
+    <p>List of moves</p>
+    <ul>
+        {% for move in all_moves %}
+        <li>{{ move }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
