@@ -7,7 +7,7 @@
     <title>Jiu Jitsu Manual</title>
 </head>
 <body>
-    <nav>Home | Log in | News | About</nav>
+    <nav><a href="{% url 'home' %}"> Home </a> | Log in | News | About</nav>
     {% block content %}{% endblock %}
     <footer>&copy; Peter Bhabra</footer>
 </body>

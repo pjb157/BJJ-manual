@@ -4,11 +4,11 @@
 <style>
     h1 { color: rebeccapurple; }
 </style>
-    <h1>{{position}}</h1>
+    <h1>{{ move }}</h1>
     <p>List of moves</p>
     <ul>
-        {% for move in all_moves %}
-        <li><a href="{% url 'move_steps' move.id %}">{{ move }}</a></li>
+        {% for step in all_steps %}
+        <li>{{ step }}</li>
         {% endfor %}
     </ul>
 {% endblock %}

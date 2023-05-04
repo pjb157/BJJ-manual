@@ -8,7 +8,7 @@
     <p>List of positions</p>
     <ul>
         {% for position in all_positions %}
-        <li>{{ position }}</li>
+        <li><a href="{% url 'position_options' position.id %}">{{ position }}</a></li>
         {% endfor %}
     </ul>
 {% endblock %}

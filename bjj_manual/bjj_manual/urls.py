@@ -21,5 +21,6 @@ from positions import views
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", views.index, name="home"),
-    path("position/<int:position_id>/", views.position_options, name="position_options")
+    path("position/<int:position_id>/", views.position_options, name="position_options"),
+    path("move/<int:move_id>/", views.move_steps, name="move_steps"),
 ]
